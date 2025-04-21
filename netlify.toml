@@ -4,6 +4,8 @@
 
 [build.environment]
   NEXT_PUBLIC_NODE_ENV = "production"
+  MISE_DISABLE = "true"  # Disable mise version manager
+  NODE_VERSION = "18"    # Explicitly set Node version
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
