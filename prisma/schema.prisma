@@ -1,0 +1,24 @@
+// This is your Prisma schema file
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Profile {
+  id           String   @id @default(cuid())
+  type         String   // "DSP" or "INDIVIDUAL"
+  name         String
+  email        String   @unique
+  phone        String?
+  supportNeeds String   // JSON string of support needs array
+  interests    String   // JSON string of interests array
+  availability String   // JSON string of availability array
+  experience   String?  // Optional experience description
+  agency       String?  // Optional agency affiliation
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+} 

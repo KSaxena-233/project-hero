@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) scale(1);
+      opacity: 0.2;
+    }
+    50% {
+      transform: translateY(-20px) scale(1.1);
+      opacity: 0.3;
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes pulse-slow {
+    0%, 100% {
+      opacity: 0.1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.3;
+      transform: scale(1.1);
+    }
+  }
+
+  .animate-float {
+    animation: float linear infinite;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease forwards;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 6s ease-in-out infinite;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-unc-blue text-white px-6 py-2 rounded-lg hover:bg-unc-navy transition-colors font-semibold;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-unc-blue text-unc-blue px-6 py-2 rounded-lg hover:bg-unc-light-blue hover:text-unc-navy transition-colors font-semibold;
+  }
+
+  .form-input {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-unc-blue focus:border-transparent text-gray-900 bg-white placeholder-gray-500;
+  }
+
+  .form-label {
+    @apply block text-sm font-semibold text-gray-900 mb-1;
+  }
+
+  .form-checkbox {
+    @apply h-4 w-4 text-unc-blue focus:ring-unc-blue border-gray-400 rounded;
+  }
+
+  /* Support Needs Styles */
+  .support-needs-section {
+    @apply p-6 bg-white rounded-lg shadow-md;
+  }
+
+  .support-needs-title {
+    @apply text-2xl font-bold text-gray-900 mb-6;
+  }
+
+  .support-needs-grid {
+    @apply grid grid-cols-2 gap-4;
+  }
+
+  .support-needs-item {
+    @apply flex items-center gap-3;
+  }
+
+  .support-needs-checkbox {
+    @apply h-5 w-5 border-2 border-gray-400 rounded;
+  }
+
+  .support-needs-label {
+    @apply text-lg font-semibold text-gray-900 bg-unc-light-blue/30 px-4 py-2 rounded-lg;
+  }
+} 
