@@ -59,7 +59,7 @@ export default function AnimatedHero() {
   }, []);
 
   const partners = [
-    { name: 'UNC', image: '/images/UNC.png', animation: 'animate-float-1' },
+    { name: 'Project HERO', image: '/images/projpic.png', animation: 'animate-float-1' },
     { name: 'Duke', image: '/images/Duke.png', animation: 'animate-float-2' },
     { name: 'NC State', image: '/images/NCState.png', animation: 'animate-float-3' },
   ];

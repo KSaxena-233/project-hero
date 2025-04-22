@@ -1,0 +1,11 @@
+{
+  "/page": "/",
+  "/about/page": "/about",
+  "/contact/page": "/contact",
+  "/find-match/page": "/find-match",
+  "/api/profile/route": "/api/profile",
+  "/api/chat/route": "/api/chat",
+  "/api/save-pdf/route": "/api/save-pdf",
+  "/api/send-email/route": "/api/send-email",
+  "/api/test-email/route": "/api/test-email"
+}
