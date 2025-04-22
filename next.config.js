@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
+    unoptimized: true,
     domains: ['docs.google.com'],
   },
   env: {
@@ -9,7 +10,8 @@ const nextConfig = {
     DSPS_SHEET_ID: '1ksqaPJsUAOjJLOfODlH1xAV-fSY2Ichvusbr3OYmiDM',
     ADMIN_EMAIL: 'samdhav@unc.edu'
   },
-  output: 'export'
+  output: 'export',
+  trailingSlash: true
 }
 
 module.exports = nextConfig 

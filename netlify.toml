@@ -5,8 +5,9 @@
 [build.environment]
   NODE_VERSION = "18"
   NEXT_PUBLIC_NODE_ENV = "production"
-  NPM_FLAGS = "--legacy-peer-deps"
   NEXT_TELEMETRY_DISABLED = "1"
 
-[build.processing]
-  skip_processing = true 
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 
