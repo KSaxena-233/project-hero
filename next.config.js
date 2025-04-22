@@ -9,7 +9,10 @@ const nextConfig = {
   compiler: {
     removeConsole: true
   },
-  swcMinify: false
+  swcMinify: false,
+  experimental: {
+    forceSwcTransforms: false
+  }
 }
 
 module.exports = nextConfig 
