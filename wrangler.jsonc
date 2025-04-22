@@ -8,5 +8,6 @@
   "build": {
     "command": "npm run build",
     "cwd": "."
-  }
+  },
+  "compatibility_flags": ["streams_enable_constructors"]
 } 
