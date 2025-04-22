@@ -1,7 +1,6 @@
 'use client'
 
-import Image from 'next/image'
-import Link from 'next/link'
+import { Link } from 'react-router-dom'
 import AnimatedHero from './components/AnimatedHero'
 import { FaHandHoldingHeart, FaGraduationCap, FaUsers, FaChartLine } from 'react-icons/fa'
 
@@ -87,13 +86,12 @@ export default function Home() {
             <div className="relative group">
               <div className="absolute -inset-4 bg-gradient-to-r from-unc-navy/20 via-unc-light-blue/30 to-unc-navy/20 blur-2xl opacity-75 group-hover:opacity-100 transition-all duration-500"></div>
               <div className="relative">
-                <Image
+                <img
                   src="/images/projpic.png"
                   alt="Project H.E.R.O. Logo"
                   width={400}
                   height={400}
                   className="transform hover:scale-105 transition-transform duration-500 animate-pulse-subtle mix-blend-screen"
-                  priority
                   style={{ 
                     filter: 'drop-shadow(0 0 20px rgba(255, 255, 255, 0.3))',
                     backgroundColor: 'transparent'
@@ -111,13 +109,13 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-400">
             <Link
-              href="/find-match"
+              to="/find-match"
               className="btn bg-white text-unc-navy hover:bg-white/90 transition-all px-8 py-3 rounded-full font-semibold text-lg"
             >
               Find Your Match
             </Link>
             <Link
-              href="/about"
+              to="/about"
               className="btn bg-transparent border-2 border-white text-white hover:bg-white/10 transition-all px-8 py-3 rounded-full font-semibold text-lg"
             >
               Learn More
@@ -291,7 +289,7 @@ export default function Home() {
             Join Project H.E.R.O. today and be part of a community dedicated to supporting individuals with developmental disabilities.
           </p>
           <Link
-            href="/find-match"
+            to="/find-match"
             className="inline-block bg-white text-unc-navy hover:bg-white/90 transition-all px-8 py-3 rounded-full font-semibold text-lg"
           >
             Get Started Now
