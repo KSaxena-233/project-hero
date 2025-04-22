@@ -9,9 +9,19 @@ const nextConfig = {
   compiler: {
     removeConsole: true
   },
-  swcMinify: false,
-  experimental: {
-    forceSwcTransforms: false
+  webpack: (config, { isServer }) => {
+    // Force Babel usage and disable SWC
+    config.module.rules.push({
+      test: /\.(js|jsx|ts|tsx)$/,
+      use: {
+        loader: 'babel-loader',
+        options: {
+          presets: ['next/babel'],
+          plugins: []
+        }
+      }
+    });
+    return config;
   }
 }
 
