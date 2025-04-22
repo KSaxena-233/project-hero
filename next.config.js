@@ -10,7 +10,8 @@ const nextConfig = {
     removeConsole: true
   },
   experimental: {
-    forceSwcTransforms: false
+    forceSwcTransforms: false,
+    disableOptimizedLoading: true
   },
   webpack: (config, { isServer }) => {
     // Force Babel usage and disable SWC
