@@ -1,13 +1,7 @@
 {
   "name": "project-hero",
   "compatibility_date": "2025-04-22",
-  "main": "src/worker.js",
-  "site": {
+  "assets": {
     "bucket": "./dist"
-  },
-  "build": {
-    "command": "npm run build",
-    "cwd": "."
-  },
-  "compatibility_flags": ["streams_enable_constructors"]
+  }
 } 

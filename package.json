@@ -25,6 +25,9 @@
     "typescript": "^5.3.3",
     "vite": "^5.1.0"
   },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "description": "Project H.E.R.O. is a platform that connects UNC students with individuals who need Direct Support Professionals (DSPs). The platform addresses the critical shortage of support services in North Carolina while promoting sustainable support systems and community integration.",
   "keywords": [],
   "author": "",
