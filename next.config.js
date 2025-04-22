@@ -6,9 +6,8 @@ const nextConfig = {
   },
   output: 'export',
   trailingSlash: true,
-  swcMinify: false,
-  experimental: {
-    forceSwcTransforms: false
+  compiler: {
+    removeConsole: true
   }
 }
 
