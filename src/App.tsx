@@ -1,5 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { FaHandHoldingHeart, FaGraduationCap, FaUsers, FaChartLine } from 'react-icons/fa'
+import Home from './pages/Home'
+import FindMatch from './pages/FindMatch'
+import About from './pages/About'
+import Contact from './pages/Contact'
 
 const stats = [
   { label: 'Active DSPs', value: '50+', icon: FaUsers },
@@ -44,7 +47,7 @@ const features = [
   }
 ];
 
-function App() {
+export default function App() {
   return (
     <Router>
       <div className="min-h-screen">
@@ -264,14 +267,12 @@ function App() {
         </section>
 
         <Routes>
-          <Route path="/" element={null} />
-          <Route path="/find-match" element={<div>Find Match Page (Coming Soon)</div>} />
-          <Route path="/about" element={<div>About Us Page (Coming Soon)</div>} />
-          <Route path="/contact" element={<div>Contact Page (Coming Soon)</div>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/find-match" element={<FindMatch />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>
   )
-}
-
-export default App 
+} 
