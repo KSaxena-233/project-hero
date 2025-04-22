@@ -8,6 +8,9 @@ const nextConfig = {
   trailingSlash: true,
   compiler: {
     removeConsole: true
+  },
+  experimental: {
+    forceSwcTransforms: true
   }
 }
 
