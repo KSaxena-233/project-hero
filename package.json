@@ -11,10 +11,6 @@
   "dependencies": {
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
-    "axios": "^1.6.7",
-    "google-spreadsheet": "^4.1.1",
-    "jspdf": "^3.0.1",
-    "nanoid": "^3.3.6",
     "next": "13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -22,14 +18,14 @@
     "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
-    "@types/node": "^18.11.18",
+    "@types/node": "20.17.30",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.10",
     "autoprefixer": "^10.4.17",
     "eslint": "^8.56.0",
     "eslint-config-next": "13.4.19",
     "postcss": "^8.4.35",
-    "typescript": "^4.9.4"
+    "typescript": "5.8.3"
   },
   "description": "Project H.E.R.O. is a platform that connects UNC students with individuals who need Direct Support Professionals (DSPs). The platform addresses the critical shortage of support services in North Carolina while promoting sustainable support systems and community integration.",
   "main": "next.config.js",
